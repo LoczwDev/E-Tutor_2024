@@ -1,0 +1,35 @@
+.str-chat__channel-search-bar {
+  padding: 0 !important;
+  margin-bottom: 10px;
+}
+button.str-chat__channel-search-bar-button.str-chat__channel-search-bar-button--exit-search {
+  display: none;
+}
+.str-chat.messaging.light.str-chat__channel-list.str-chat__channel-list-react {
+  border: none;
+}
+.str-chat__message-bubble {
+  border-radius: 0 !important;
+  background: red;
+}
+.str-chat__message.str-chat__message--me .str-chat__message-bubble {
+  background-color: #ff6636 !important;
+  color: #fff;
+}
+.str-chat__message .str-chat__message-bubble {
+  background-color: #ffeee8;
+  color: #1d2026;
+}
+.str-chat__date-separator {
+  display: none;
+}
+
+.str-chat__main-panel-inner.str-chat__message-list-main-panel {
+  margin-top: 50px;
+}
+.str-chat__message-metadata{
+    display: none !important;
+}
+.str-chat__channel-header {
+    border-bottom: 1px solid #E9EAF0 !important;
+}

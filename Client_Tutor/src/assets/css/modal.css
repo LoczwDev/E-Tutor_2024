@@ -1,0 +1,19 @@
+.modal {
+  z-index: 999 !important;
+}
+.modal::backdrop {
+  z-index: 800 !important;
+}
+.modal-box {
+  padding: 0 !important;
+  max-width: 72rem !important;
+  max-height: none !important;
+  width: 100%;
+}
+
+.customToaster {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 9999;
+}

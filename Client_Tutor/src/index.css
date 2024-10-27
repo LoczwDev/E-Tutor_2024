@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ul {
+    @apply list-disc list-inside pl-5; /* Sử dụng dấu chấm cho danh sách không thứ tự và thêm lề trái */
+  }
+
+  ol {
+    @apply list-decimal list-inside pl-5; /* Sử dụng số cho danh sách có thứ tự và thêm lề trái */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* CSS */
+.clip-top-left {
+  clip-path: polygon(
+    10% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+  ); /* Cắt góc trên bên trái */
+}
+
+.modal::backdrop {
+  display: none !important;
+}
+
+.modal-box {
+  z-index: 1050;
+}
+
+.toast-container {
+  z-index: 999999 !important;
+}
+
+.ant-picker-outlined {
+  border-radius: 0 !important;
+}
+
+.ant-picker-outlined:focus {
+  border: #ff6636 !important;
+}
+
+.ant-picker-outlined:hover {
+  border-color: #ff6636 !important;
+}
+.ant-picker-outlined:focus-within {
+  border-color: #ff6636;
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 102 54 / var(--tw-ring-opacity));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+.custom-select {
+  width: 100%; /* w-full */
+  height: 40px !important;
+  color: #4a5568; /* text-gray6 */
+  border: 1px solid #e2e8f0; /* border-gray1 */
+  border-radius: 0 !important; /* rounded */
+}
+
+.custom-select .ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+}
+
+.custom-select .ant-select-selection-placeholder {
+  color: #a0aec0; /* placeholder:text-gray5 */
+}
+
+.custom-select .ant-select-selection-item {
+  color: #4a5568; /* text-gray6 */
+}
+
+.custom-select .ant-select-focused .ant-select-selector {
+  border-color: #3182ce; /* border when focused */
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.6); /* focus:ring-2 focus:ring-primary */
+}
+
+.custom-input-number {
+  font-size: 18px !important;
+  width: 100%; /* w-full */
+  height: 40px !important;
+  color: #4a5568; /* text-gray6 */
+  border: 1px solid #e2e8f0; /* border-gray1 */
+  border-radius: 0 !important; /* rounded */
+}
+.custom-input-number:hover {
+  border-color: #e2e8f0 !important;
+}
+
+input.ant-input-number-input {
+  border-radius: 0 !important;
+  width: 100% !important;
+  height: 40px !important;
+  color: #23bd33 !important;
+  font-weight: 600;
+}
+
+.ant-input-number-outlined:focus,
+.ant-input-number-outlined:focus-within {
+  border-color: #e2e8f0;
+  box-shadow: 0 0 0 2px #ff6636;
+  outline: 0;
+  background-color: #ffffff;
+}
+.ant-input-number {
+  border-radius: 0 !important;
+}
+.checkbox:checked,
+.checkbox[aria-checked="true"] {
+  border-color: #ff6636;
+  background-color: #ff6636;
+  color: #fff;
+}
+
+.video_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.player__wrapper {
+  position: relative;
+}
+
+.player {
+  border: 2px solid #7b2cbf;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-display {
+  position: relative;
+  display: inline-block;
+}
+.react-joyride__tooltip {
+  border-radius: 0 !important;
+}
+button {
+  border-radius: 0 !important;
+}
+.__floater__arrow {
+  display: none !important;
+}
+body.no-scroll {
+  overflow: hidden; /* Ngăn chặn cuộn */
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-1lwhjos-MuiPaper-root-MuiDrawer-paper {
+  background-color: #1d2026 !important;
+  color: #8c94a3 !important;
+}
+.str-chat__channel-search {
+  padding: 10px !important;
+}
+
+.str-chat__message-textarea-container {
+  border-radius: 0 !important;
+}
+.str-chat__message-input .str-chat__send-button {
+  color: #ff6636 !important;
+  --str-chat-icon-color: #ff6636 !important;
+}
+
+.str-chat__message-input .str-chat__send-button svg path {
+  fill: #ff6636;
+}
+
+.ant-input-number {
+  width: 100% !important;
+}
+
+/* Player access */
+.vds-slider-track-fill.vds-slider-track {
+  background-color: #ff6636 !important;
+}
+
+.ant-input-number-handler-wrap {
+  display: none !important;
+}
+
+[data-media-player][data-layout="video"] {
+  height: 100% !important;
+}
+
+/* player plyr */
+.plyr--full-ui input[type="range"] {
+  color: #ff6636;
+}
+
+.plyr__control--overlaid {
+  background: rgba(YourRGBColor, 0.8);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded="true"] {
+  background: #ff6636;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba(YourRGBColor, 0.5);
+}
+
+.plyr__menu__container
+  .plyr__control[role="menuitemradio"][aria-checked="true"]::before {
+  background: #ff6636;
+}
+
+/* Table mui */
+
+.MuiDataGrid-columnHeaderTitleContainer:focus {
+  border-color: transparent !important;
+}
+
+.MuiDataGrid-row--borderBottom.css-yrdy0g-MuiDataGrid-columnHeaderRow {
+  background: #fff !important;
+}
+.MuiDataGrid-cell:focus,
+.MuiDataGrid-columnHeader:focus {
+  outline: none !important;
+}
+.MuiDataGrid-scrollbar.MuiDataGrid-scrollbar--vertical.css-20a7a0 {
+  width: 6px !important;
+}
+
+.MuiIconButton-root:focus {
+  outline: none !important; /* Remove outline */
+  border: none !important; /* Remove border */
+  box-shadow: none !important; /* Remove any shadow effect */
+}
+
+.css-j94st8-MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within,
+.css-j94st8-MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
